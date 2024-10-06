@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -15,15 +13,6 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
-  main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: max-content;
-  }
-
 
 
 .formbold-form-wrapper {
