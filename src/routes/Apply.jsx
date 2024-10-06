@@ -11,7 +11,7 @@ export default function Apply({ self }) {
   const {guildid} = useParams();
 
   return (
-      <div className="application">
+      <div className="apply">
 
 
             <section className="form">
