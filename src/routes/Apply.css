@@ -1,0 +1,19 @@
+.application {
+  background-color: rgb(30, 30, 30);
+  flex: 1;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.application > section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.application > section >  h2 {
+  color: white;
+  font-size: xx-large;
+  margin: 20px 0;
+}

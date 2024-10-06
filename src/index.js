@@ -12,6 +12,7 @@ import Transcript from './routes/Transcript';
 import Transcripts from './routes/Transcripts';
 import Appeal from './routes/Appeal'
 import Appeals from './routes/Appeals'
+import Apply from './routes/Apply.jsx'
 import UserNotes from './routes/UserNotes.jsx';
 import Notes from './routes/Notes'
 import Guildbar from './components/Guild/Guildbar.jsx'
@@ -62,6 +63,13 @@ function App() {
           }
         ]
       },
+
+      {
+
+        path: "/:guildid/apply",
+        element: <Apply self={self}/>
+
+      }
 
     ]
   );
