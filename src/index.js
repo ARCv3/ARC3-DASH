@@ -12,6 +12,7 @@ import Transcript from './routes/Transcript';
 import Transcripts from './routes/Transcripts';
 import Appeal from './routes/Appeal'
 import Appeals from './routes/Appeals'
+import Applications from './routes/Applications.jsx'
 import Apply from './routes/Apply.jsx'
 import UserNotes from './routes/UserNotes.jsx';
 import Notes from './routes/Notes'
@@ -69,6 +70,11 @@ function App() {
         path: "/:guildid/apply",
         element: <Apply self={self}/>
 
+      },
+
+      {
+        path: "/:guildid/applications",
+        element: <Applications/>
       }
 
     ]
