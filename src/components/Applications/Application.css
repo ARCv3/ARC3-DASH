@@ -3,6 +3,10 @@
     flex-direction: column;
     width: 80%;
     margin: 20px;
+    background-color: rgb(30, 30, 30);
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
     padding: 20px;
 }
 
@@ -17,7 +21,10 @@
 }
 
 .content-view {
+    flex: 1;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .content-header h1 {
