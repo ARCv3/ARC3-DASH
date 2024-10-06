@@ -25,7 +25,7 @@ export default function Application({data}) {
             <section className="content-view">
                 <div className="content-header">
                     <MemberLabel user={user} placement={"right"}/> 
-                    <h1>Application Details</h1>
+    
                 </div>
                 <div className="content-main">
                     <h4>About this user:</h4>
@@ -50,7 +50,7 @@ export default function Application({data}) {
                     <h4>Bio:</h4>
 
                     <div className="text-area">
-                        {data.about}
+                        <p>{data.about}</p>
                     </div>
 
                     <h4>Why do you want to be staff:</h4>
