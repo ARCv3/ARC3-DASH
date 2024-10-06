@@ -1,0 +1,8 @@
+.note-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes-user-list {
+    overflow-x: scroll;
+}

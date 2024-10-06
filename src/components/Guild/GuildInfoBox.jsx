@@ -16,6 +16,7 @@ export default function GuildInfoBox({guild, stats}) {
         <p>Premium {premium}</p>
         <a className="button" href={`/${guild.id}/transcripts`}>Transcripts</a>
         <a className="button" href={`/${guild.id}/notes`}>User Notes</a>
+        <a className="button" href={`/${guild.id}/applications  `}>Applications</a>
       </div>
     </div>
   </InfoBox>

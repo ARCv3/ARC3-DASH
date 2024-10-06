@@ -1,0 +1,48 @@
+.applications {
+  background-color: rgb(30, 30, 30);
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.applications > section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333333;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.applications > section > input {
+  width: 70%;
+  height: 20px;
+}
+
+.applications-user-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 10px 30px;
+}
+
+.applications > section >  h2 {
+  color: white;
+  font-size: xx-large;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .applications {
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .applications {
+    flex-direction: column;
+  }
+}
