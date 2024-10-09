@@ -2,7 +2,6 @@
   background-color: rgb(30, 30, 30);
   flex: 1;
   display: flex;
-  padding: 20px;
   overflow-x: scroll;
 }
 
@@ -10,12 +9,14 @@
   flex: 1;
   display: flex;
   align-items: center;
+  margin: 10px;
   justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
   .home {
     flex-direction: row;
+    padding: 20px;
   }
 }
 
@@ -31,13 +32,12 @@
 }
 
 .home > section.left > div {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .home section.right {
 
   justify-content: stretch;
-  margin: 20px;
 
 }
 
