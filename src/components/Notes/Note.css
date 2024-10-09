@@ -2,17 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    border: solid white 2px;
-    margin: 15px;
     padding: 15px;
     color: white;
     background-color: #1f1f1f;
-    border-radius: 25px;
 }
 
 .note-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -29,7 +27,9 @@
 }
 
 .note-top h2 {
+    margin: 0;
     margin-left: 10px;
+
 }
 
 .note-bottom {
@@ -40,4 +40,31 @@
 
 .note-top img {
     width: 25px;
+}
+
+
+@media screen and (min-width: 800px) {
+    .note {
+        margin: 15px;
+        border: solid white 1px;
+        border-radius: 25px;
+    }
+    .note-bottom p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .note {
+        border-bottom:  gray solid 1px;
+    }
+    .note:last-child {
+        border-top: gray solid 1px;
+        border-bottom: none;
+    }
+    .note-bottom p {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    
 }

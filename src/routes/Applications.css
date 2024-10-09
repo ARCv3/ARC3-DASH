@@ -2,7 +2,6 @@
   background-color: rgb(30, 30, 30);
   flex: 1;
   display: flex;
-  padding: 20px;
   overflow-x: scroll;
 }
 
@@ -12,8 +11,6 @@
   align-items: center;
   flex-direction: column;
   background-color: #333333;
-  margin: 20px;
-  border-radius: 20px;
 }
 
 .applications > section > input {
@@ -37,6 +34,12 @@
 @media screen and (min-width: 800px) {
   .applications {
     flex-direction: row;
+    padding: 20px;
+  }
+
+  .applications > section {
+    margin: 20px;
+    border-radius: 10px;
   }
 }
 
