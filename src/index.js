@@ -74,9 +74,9 @@ function App() {
 
       {
         path: "/:guildid/applications",
-        element: <Applications/>
+        element: <Applications self={self}/>
       }
-
+          
     ]
   );
   
