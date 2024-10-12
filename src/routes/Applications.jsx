@@ -8,10 +8,11 @@ import Application from '../components/Applications/Application.jsx';
 import ApplicationUserList from '../components/Applications/ApplicationUserList.jsx';
 
 
-export default function Applications() {
+export default function Applications({self}) {
 
   const {guildid} = useParams();
   const [applicationUsers, setApplicationUsers] = useState([]);
+  const [approvals, setApprovals] = useState([])
 
   const [application, setApplication] = useState(null);
   const [filter, setFilter] = useState("");
@@ -20,6 +21,12 @@ export default function Applications() {
     axios.get(`/api/applications/${guildid}`).then(res => {
       setApplicationUsers(res.data);
     })
+
+    axios.get(`/api/applications/${guildid}/approvals`).then( res => {
+
+      setApprovals(res.data);
+
+    });
 
   }, [guildid])
 
@@ -37,7 +44,7 @@ export default function Applications() {
           </section>
           <section className="left">
               <h2>Application</h2>
-              {application !== null && <Application data={application} /> }  
+              {application !== null && <Application self={self} approvals={approvals} data={application} setApprovals={setApprovals} /> }  
           </section>
       </div>
 
